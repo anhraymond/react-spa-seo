@@ -27,8 +27,8 @@
   "scripts": {
     "start": "npm-run-all --parallel dev:*",
     "start:dev": "react-scripts start",
-    "dev:start": "nodemon --watch build --exec npm run babel-node -- server/main.js",
     "dev:build": "react-scripts build",
+    "dev:start": "nodemon --watch build --exec npm run babel-node -- server/main.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "babel-node": "babel-node --presets=@babel/preset-env,@babel/preset-react"

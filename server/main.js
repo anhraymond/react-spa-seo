@@ -14,7 +14,7 @@ import {HelmetProvider} from "react-helmet-async";
 process.env.NODE_ENV = 'production';
 
 const app = express();
-const port = 8080;
+const port = process.env.PORT || 8080;
 const buildPath = path.join(process.cwd(), 'build');
 
 app.use(express.static(buildPath, { index: false }));
