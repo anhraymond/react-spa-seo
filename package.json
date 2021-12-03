@@ -25,7 +25,7 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start:production": "npm-run-all --parallel dev:*",
+    "start": "npm-run-all --parallel dev:*",
     "start:dev": "react-scripts start",
     "dev:start": "nodemon --exec npm run babel-node -- server/main.js",
     "dev:build": "react-scripts build",
